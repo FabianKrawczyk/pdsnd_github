@@ -160,7 +160,7 @@ def user_stats(df):
 
 def raw_data (df):
     """
-    #displays 5 more rows each time and if the user don't wanna see more raw data the script can be stopped with no
+    #def raw_data: displays 5 more rows each time and if the user don't wanna see more raw data the script can be stopped with no
     """
     more_data_input = input('\nWould you like to see more raw data? Enter yes or no?.\n').casefold()
     while more_data_input not in ['yes', 'no']:
