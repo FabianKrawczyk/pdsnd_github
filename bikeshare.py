@@ -10,7 +10,7 @@ def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
     Additional explanation ...
-    New 
+    New
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -48,7 +48,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     # Loads data for the specified city
-    if city not in ['new york city']:
+    if city not in ['new york city']: #improvements
         df = pd.read_csv('{}.csv'.format(city))
     else:
         df = pd.read_csv('new_york_city.csv')
